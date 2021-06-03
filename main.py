@@ -1,6 +1,7 @@
 import forma_file
 from random import randint
 import os
+import random
 
 """
 1) 0 - 710 (ID); 0 - 63(индекс) АТД, основные понятия
@@ -26,6 +27,7 @@ def stat(quest, x, lst):
 
 def hide_q(data, number):
     list_q = []
+    random.shuffle(data[number].q)
     for q in data[number].q:
         list_q.append(q.replace("=", "").replace("~", ""))
     return list_q

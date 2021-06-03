@@ -41,5 +41,5 @@ def get_base():
     text = read_file()
     lst = format_file(text, lst)
     sort_list = sorted(lst, key=lambda x: int(x.id), reverse=False)
-    #write_file(sort_list)
+    # write_file(sort_list)
     return sort_list
